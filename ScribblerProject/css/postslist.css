@@ -1,0 +1,350 @@
+body {
+background-color:#ffeedd;
+}
+
+.heading {
+   font-size: 35px;
+   color: blue;
+   font-family: 'Montez',cursive;
+   margin-left: 12px;
+   top:-40px;
+   position:absolute;
+}
+
+.tag-line {
+   font-size: 12px;
+   margin-left:12px;
+   top: 40px;
+   position:absolute;
+   font-family: 'Ubuntu Mono';
+}
+
+#sign-up {
+   background-color:blue;
+   color:white;
+   position:absolute;
+   left:1060px;
+   top:20px;
+cursor:pointer;
+padding:10px;
+border:none;
+}
+
+#sign-in {
+   background-color:blue;
+   color:white;
+   position:absolute;
+   left:1130px;
+   top:20px;
+  cursor:pointer;
+padding:10px;
+border:none;
+}
+
+.not_a_member {
+text-align:center;
+}
+
+#hyperlink {
+text-decoration:none;
+}
+
+/* The Modal (background) */
+.signup-modal,.signin-modal,.createpost-modal, .trash-modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+.trash-modal {
+background-color: rgba(0,0,0,0.8); /* Black w/ opacity */
+}
+
+/* Modal Content */
+
+.signup-modal-content,.signin-modal-content, .createpost-modal-content, .trash-modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 10px;
+  border: 1px solid #888;
+  width: 360px;
+  height: 380px;
+  padding-top:15px;
+  padding-left:15px;
+}
+
+.signin-modal-content {
+  height:280px;
+}
+
+.createpost-modal-content {
+  margin-top:-40px;
+  height:450px;
+  width:1000px;
+
+}
+
+.trash-modal-content {
+  width:300px;
+height:100px;
+
+}
+
+.trash-modal-content {
+margin-left:40%;
+margin-top:10%;
+}
+
+.title {
+   font-size:20px;
+}
+
+.not_a_member {
+  text-align:center;
+}
+
+/* The Close Button */
+.close1, .close2, .close3, .close4, .close5, .close6, .close7 {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close1, .close2 {
+margin-top:-50px;
+}
+
+.close3,.close4,.close5,.close6,.close7 {
+margin-top:-55px;
+}
+
+.close1:hover,
+.close1:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.close2:hover,
+.close2:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.close3:hover,
+.close3:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.close4:hover,
+.close4:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.close5:hover,
+.close5:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.close6:hover,
+.close6:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.close7:hover,
+.close7:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.container {
+display: flex;
+flex-wrap:wrap;
+}
+
+
+.box {
+text-overflow:ellipsis;
+  border-radius:15px;
+  background-color:#e6e9ed;
+  margin:auto;
+  margin-top:90px; 
+  flex-direction: row;
+  justify-content: space-between;
+  flex-basis:43%;
+  flex-wrap:wrap;
+height:175px;
+display:block;
+  box-shadow: 0 0 30px rgba(33,33,33,.2); 
+
+}
+
+.box:hover {
+  box-shadow: 0 0 80px rgba(33,33,33,.2); 
+}
+
+.author {
+background-color:white;
+float:left;
+width:80px;
+height:100%;
+display:flex;
+text-align:center;
+align-items:center;
+color:#7e8280;
+font-weight:bold;
+border-top-left-radius: 15px;
+border-bottom-left-radius: 15px;
+}
+
+
+
+
+.post-content {
+font-size:18px;
+padding-left:9px;
+padding-top:-10px;
+line-spacing:-0.25 rem;
+}
+
+.post-content,.hide_post_content {
+display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+overflow:hidden;
+margin:0px;
+
+}
+
+span {
+color:black;
+padding-top:50px;
+}
+
+
+
+.trash {
+border:none;
+cursor:pointer;
+float:right;
+margin-right:-30px;
+background-color:transparent;
+font-size:15px;
+}
+
+.three_dots {
+cursor:pointer;
+border:none;
+background-color:transparent;
+float:right;
+margin-right:18px;
+font-size:15px;
+margin-top:15px;
+}
+
+.post-heading,.text {
+color:#8a918e;
+font-size:18px;
+line-spacing:0.5 rem;
+width:90%;
+text-indent:1px;
+}
+
+.text {
+padding-left:10px;
+}
+
+
+
+
+.yes {
+background-color:green;
+color:white;
+cursor:pointer;
+float:left;
+margin-top:30px;
+border:none;
+width:60px;
+padding:8px;
+}
+
+.no {
+background-color:red;
+color:white;
+cursor:pointer;
+float:right;
+margin-top:30px;
+border:none;
+width:60px;
+padding:8px;
+}
+
+ {
+text-align:center;
+}
+
+#sign-up {
+   background-color:blue;
+   color:white;
+   position:absolute;
+   left:1030px;
+   top:20px;
+ cursor:pointer;
+padding:10px;
+border:none;
+}
+
+
+
+input {
+   background-color:#f0efeb;
+   border:none;
+   width:330px;
+   padding:10px;
+}
+
+.submit {
+   color:white;
+   background-color:MediumSeaGreen;
+   width:350px;
+   padding:10px;
+   border:none;
+}
+
+.signup {
+color:blue;
+text-align:center;
+cursor:pointer;
+padding:10px;
+border:none;
+cursor:pointer;
+padding:10px;
+border:none;
+}
+
+
+@media(max-width: 1000px) {
+    .box{
+        height:75%;
+	width:75%;
+    }
+}

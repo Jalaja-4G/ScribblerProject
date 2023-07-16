@@ -1,0 +1,189 @@
+.heading {
+   font-size: 35px;
+   color: blue;
+   font-family: 'Montez',cursive;
+   margin-left: 12px;
+   top:-40px;
+   position:absolute;
+}
+
+.tag-line {
+   font-size: 12px;
+   margin-left:12px;
+   top: 40px;
+   position:absolute;
+   font-family: 'Ubuntu Mono';
+}
+
+#sign-up {
+   background-color:blue;
+   color:white;
+   position:absolute;
+   left:1060px;
+   top:20px;
+  cursor:pointer;
+padding:10px;
+border:none;
+}
+
+#sign-in {
+   background-color:blue;
+   color:white;
+   position:absolute;
+   left:1150px;
+   top:20px;
+  cursor:pointer;
+padding:10px;
+border:none;
+}
+
+.submit {
+   color:white;
+   background-color:MediumSeaGreen;
+   width:350px;
+   padding:10px;
+   border:none;
+}
+
+.signup {
+color:blue;
+}
+
+/* The Modal (background) */
+.signup-modal,.signin-modal,.createpost-modal, .trash-modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+
+#hyperlink {
+text-decoration:none;
+}
+
+/* Modal Content */
+
+.signup-modal-content,.signin-modal-content, .createpost-modal-content, .trash-modal-content, .post-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 10px;
+  border: 1px solid #888;
+  width: 360px;
+  height: 380px;
+  padding-top:15px;
+  padding-left:15px;
+}
+
+.signin-modal-content {
+  height:280px;
+}
+
+.createpost-modal-content {
+  margin-top:-40px;
+  height:450px;
+  width:1000px;
+
+}
+
+.trash-modal-content {
+  width:300px;
+height:100px;
+}
+
+.title {
+   font-size:20px;
+}
+
+input,.post_title {
+   background-color:#f0efeb;
+   border:none;
+   width:330px;
+   padding:10px;
+}
+
+.not_a_member {
+text-align:center;
+}
+
+/* The Close Button */
+.close1, .close2 {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close1:hover,
+.close1:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.close2:hover,
+.close2:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#post-heading {
+text-align:center;
+font-weight:bold;
+margin-top:100px;
+}
+
+#post-content {
+text-align:justify;
+text-justify: inter-word;
+}
+
+.edit {
+float:right;
+margin-top:-40px;
+}
+
+.posts {
+  width:400px;
+  height:400px;
+  border:1px solid black;
+}
+
+.edit, .comment, .like {
+color:white;
+background-color:red;
+border:none;
+padding:8px;
+box-shadow:0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+textarea {
+width:800px;
+height:50px;
+}
+
+.allComments {
+width: 82%;
+background-color: #d4d2d2;
+height: auto;
+padding: 10px;
+display: none;
+text-indent:10px;
+}
+
+#post-heading {
+font-size:25px;
+border-color:red;
+}
+
+#post-author {
+   font-family: 'Ubuntu Mono';
+}

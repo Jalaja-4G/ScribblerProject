@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- TODO: Include Font Awesome file here -->
+    <!-- TODO: Include Google Fonts file here -->
+    <link rel="stylesheet" href="../css/post.css">
+    <link href="https://fonts.googleapis.com/css?family=Montez&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body onload="extract_post_details()">
+    <!-- TODO: Include all your code for the header and home page here -->
+<div id="heading-part">
+	<h5 class='heading'>ScriBBler</h5>
+	<h6 class='tag-line'>Explore, Imagine, Create</h6>
+	<button id="sign-up">Sign Up</button>
+	
+	<!-- The Modal -->
+	<div id="mySignUpModal" class="signup-modal">
+
+  	     <!-- Modal content -->
+		  <div class="signup-modal-content">
+ 	             <span class="close1">&times;</span>
+		     <label class="title">Get Started</label>
+		     <hr>
+		     <form>
+		     <label>Name</label><br>
+		     <input type="text" placeholder="Enter your name" required><br><br>
+		     <label>Username</label><br>
+		     <input type="text" placeholder="Enter your username" required><br><br>
+		     <label>Password</label><br>
+		     <input type="password" placeholder="Enter your password" required><br><br>
+		     <label>Confirm Password</label><br>
+		     <input type="password" placeholder="Re-enter your password" required><br><br>
+		     <button class="submit" type="submit">Sign Up</button>
+		     </form>
+		  </div>
+	</div>
+
+
+	<button id="sign-in">Sign In</button>
+
+	<div id="mySignInModal" class="signin-modal">
+
+  	     <!-- Modal content -->
+		  <div class="signin-modal-content">
+ 	             <span class="close2">&times;</span>
+		     <label class="title">Welcome Back!</label>
+		     <hr>
+		     <form>
+		     <label>Username</label><br>
+		     <input type="text" placeholder="Enter your username" required><br><br>
+		     <label>Password</label><br>
+		     <input type="password" placeholder="Enter your password" required><br><br>		     
+		     <button class="submit" type="submit">Sign In</button>
+		     <p class="not_a_member">Not a member? <a href="#" id="hyperlink"><span class="signup">Sign Up</span></a></p>
+		     </form>
+		  </div>
+	</div>
+</div>
+
+
+<div class="all_posts" id="myAllPosts" class="all_posts">
+<p id="post-heading"></p>
+<p id="post-author"></p>
+<button class="edit" id="edit" onclick="make_editable(this)">Edit <i class='fa fa-edit'></i></button>
+<p id="post-content"></p>
+<button class="like" id="like" value="1" onclick="update_like_count()"><i class="fa fa-thumbs-up"></i> Like</button>
+<p id="like_tagline">Be the first one to like this!</p>
+<textarea id="comment" placeholder="Leave a comment..."></textarea><br><br>
+<button class="comment" onclick="display_comment()">Comment</button>
+<h4>All Comments</h4>
+<div class="allComments" id="allComments"></div>
+</div>
+<script src="../scripts/post.js"></script>
+</body>
+</html>

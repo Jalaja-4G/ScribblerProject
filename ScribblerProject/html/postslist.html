@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- TODO: Include Font Awesome file here -->
+    <!-- TODO: Include Google Fonts file here -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="../css/postslist.css">
+    <link href="https://fonts.googleapis.com/css?family=Montez&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- TODO: Include code for header here -->
+
+    <!-- ATTENTION: The HTML code for the list of posts has been given to you. You can feel free to add/delete/modify this code. You need to write the proper CSS and JavaScript code corresponding to this page so that the result looks like the screenshots given to you in the Project Statement. -->
+
+    <!-- list of all posts starts here -->
+
+    <div id="heading-part">
+	<h5 class='heading'>ScriBBler</h5>
+	<h6 class='tag-line'>Explore, Imagine, Create</h6>
+	<button id="sign-up">Sign Up</button>
+	
+	<!-- The Modal -->
+	<div id="mySignUpModal" class="signup-modal">
+
+  	     <!-- Modal content -->
+		  <div class="signup-modal-content">
+ 	             <span class="close1">&times;</span>
+		     <label class="title">Get Started</label>
+		     <hr>
+		     <form>
+		     <label>Name</label><br>
+		     <input type="text" placeholder="Enter your name" required><br><br>
+		     <label>Username</label><br>
+		     <input type="text" placeholder="Enter your username" required><br><br>
+		     <label>Password</label><br>
+		     <input type="password" placeholder="Enter your password" required><br><br>
+		     <label>Confirm Password</label><br>
+		     <input type="password" placeholder="Re-enter your password" required><br><br>
+		     <button class="submit" type="submit">Sign Up</button>
+		     </form>
+		  </div>
+	</div>
+
+
+	<button id="sign-in">Sign In</button>
+
+	<div id="mySignInModal" class="signin-modal">
+
+  	     <!-- Modal content -->
+		  <div class="signin-modal-content">
+ 	             <span class="close2">&times;</span>
+		     <label class="title">Welcome Back!</label>
+		     <hr>
+		     <form>
+		     <label>Username</label><br>
+		     <input type="text" placeholder="Enter your username" required><br><br>
+		     <label>Password</label><br>
+		     <input type="password" placeholder="Enter your password" required><br><br>		     
+		     <button class="submit" type="submit">Sign In</button>
+		     <p class="not_a_member">Not a member? <a href="#" id="hyperlink"><span class="signup">Sign Up</span></a></p>
+		     </form>
+		  </div>
+	</div>
+</div>
+    <div class="container">
+
+        <!-- post 1 starts here -->
+        <div class="box" id="1">
+            <div class="author">
+                <p id="author-1">Srishti Gupta</p>
+            </div>
+
+            <div class="content" id="content-1">
+                    <p class="post-heading"><span id="heading-1" class="text">‘let’ me be a ‘const’(ant), not a ‘var’(iable)!</span>
+				<button class="trash" id="TrashButton1" onclick="display_trash_modal(1)">
+					<span class="icon">
+						<!-- TODO: Include Font Awesome icon for delete icon here -->
+						<i class="fa fa-trash-o" aria-hidden="true"></i>
+					</span>
+				</button> 
+		    </p> 	
+		    <div id="myTrashModal1" class="trash-modal">
+
+			  <!-- Modal content -->
+			  <div class="trash-modal-content">
+ 	             		<span class="close3">&times;</span>
+					<label class="trash_title">Are you sure you want to delete this post?</label>		     		     
+					<button class="yes" id="yes1" onclick="remove_post(1)" type="submit">Yes</button>
+					<button class="no" id="no1" onclick="retain_post(1)" type="submit">No</button>
+			  </div>
+
+                  </div>
+		<div class="post-content">
+                <p class="hide_post_content" id="post-content-1">Since JavaScript does not have any type-checking, either of these keywords can be used to declare a variable of any type (datatype) in JavaScript. Though all the three keywords are used for the same purpose, they are different.</p>
+		  </div>
+			<button id="post1" onclick="show_post_details(1)" class="three_dots">
+				<span>
+				<!-- TODO: Include Font Awesome icon for delete icon here -->
+				<i class="fa fa-ellipsis-h" aria-hidden="true"></i>
+				</span>
+			</button>
+            </div>
+        </div>
+        <!-- post 1 ends here -->
+
+        <!-- post 2 starts here -->
+        <div class="box" id="2">
+            <div class="author">
+                <p id="author-2">Colby Fayock</p>
+            </div>
+
+            <div class="content" id="content-2">
+                <div>
+                    <p class="post-heading"><span id="heading-2" class="text">What is linting and how can it save you time?</span>
+                   	<button class="trash" id="TrashButton2" onclick="display_trash_modal(2)"> 
+			<span class="icon">
+                        	<!-- TODO: Include Font Awesome icon for delete icon here -->
+				<i class="fa fa-trash-o" aria-hidden="true"></i>
+                    	</span>
+			</button>
+		    </p>
+
+		    <div id="myTrashModal2" class="trash-modal">
+
+  	     		<!-- Modal content -->
+		  	<div class="trash-modal-content">
+ 	             		<span class="close4">&times;</span>
+		     		<label class="trash_title">Are you sure you want to delete this post?</label>		     		     
+		     		<button class="yes" id="yes2" onclick="remove_post(2)" type="submit">Yes</button>
+		     		<button class="no" id="no2" onclick="retain_post(2)" type="submit">No</button>
+		  	</div>
+		    </div>
+
+                </div>
+		<div class="post-content">
+                <p class="hide_post_content" id="post-content-2">One of the biggest challenges in software development is time. It’s something we can’t easily get more of, but linting can help us make the most out of the time we have.</p>
+                </div>
+			<button id="post2" onclick="show_post_details(2)" class="three_dots">
+				<span>
+				<!-- TODO: Include Font Awesome icon for delete icon here -->
+				<i class="fa fa-ellipsis-h" aria-hidden="true"></i>
+				</span>
+			</button>
+            </div>
+        </div>
+        <!-- post 2 ends here -->
+
+        <!-- post 3 starts here -->
+        <div class="box" id="3">
+            <div class="author">
+                <p id="author-3">Yazeed Bzadough</p>
+            </div>
+
+            <div class="content" id="content-3">
+                <div>
+                    <p class="post-heading"><span id="heading-3" class="text">How to Get More Views on Your Tech Blog </span>
+                   <button class="trash" id="TrashButton3" onclick="display_trash_modal(3)"> 
+		<span class="icon">
+                        <!-- TODO: Include Font Awesome icon for delete icon here -->
+<i class="fa fa-trash-o" aria-hidden="true"></i>
+                    </span></button></p>
+
+		<div id="myTrashModal3" class="trash-modal">
+
+  	     <!-- Modal content -->
+		  <div class="trash-modal-content">
+ 	             <span class="close5">&times;</span>
+		     <label class="trash_title">Are you sure you want to delete this post?</label>		     		     
+		     <button class="yes" id="yes3" onclick="remove_post(3)" type="submit">Yes</button>
+		     <button class="no" id="no3" onclick="retain_post(3)" type="submit">No</button>
+		  </div>
+	</div>
+
+                </div>
+		<div class="post-content">
+                <p class="hide_post_content" id="post-content-3">If you're a developer with a Twitter account, you've already seen everyone and their cat start a blog, YouTube channel, or Patreon. We all want to become stars, or at the very least, a recognizable name in the industry.</p>
+               </div>
+			<button id="post3" onclick="show_post_details(3)" class="three_dots">
+				<span>
+				<!-- TODO: Include Font Awesome icon for delete icon here -->
+				<i class="fa fa-ellipsis-h" aria-hidden="true"></i>
+				</span>
+			</button>
+            </div>
+        </div>
+        <!-- post 3 ends here -->
+
+        <!-- post 4 starts here -->
+        <div class="box" id="4">
+            <div class="author">
+                <p id="author-4">Cedd Burge</p>
+            </div>
+
+            <div class="content" id="content-4">
+                <div>
+                    <p class="post-heading"><span id="heading-4" class="text">How to write easily describable code </span>
+                   <button class="trash" id="TrashButton4" onclick="display_trash_modal(4)"> 
+		<span class="icon">
+                        <!-- TODO: Include Font Awesome icon for delete icon here -->
+<i class="fa fa-trash-o" aria-hidden="true"></i>
+                    </span>
+		</button>
+		</p>
+
+		<div id="myTrashModal4" class="trash-modal">
+
+  	     <!-- Modal content -->
+		  <div class="trash-modal-content">
+ 	             <span class="close6">&times;</span>
+		     <label class="trash_title">Are you sure you want to delete this post?</label>		     		     
+		     <button class="yes" id="yes4" onclick="remove_post(4)" type="submit">Yes</button>
+		     <button class="no" id="no4" onclick="retain_post(4)" type="submit">No</button>
+		  </div>
+	</div>
+
+                </div>
+		<div class="post-content">		
+                <p class="hide_post_content" id="post-content-4">When code is not describable using words, most people have to do some mental mapping to turn it in to words. This wastes mental energy, and you run the risk of getting the mapping wrong. Different people will map to different words, which leads to confusion when discussing the code.</p>
+                </div>
+			<button id="post4" onclick="show_post_details(4)" class="three_dots">
+				<span>
+				<!-- TODO: Include Font Awesome icon for delete icon here -->
+				<i class="fa fa-ellipsis-h" aria-hidden="true"></i>
+				</span>
+			</button>
+            </div>
+        </div>
+        <!-- post 4 ends here -->
+
+        <!-- post 5 starts here -->
+        <div class="box" id="5">
+            <div class="author">
+                <p id="author-5">Srishti Gupta</p>
+            </div>
+
+            <div class="content" id="content-5">
+                <div>
+                    <p class="post-heading"><span id="heading-5" class="text">Everything you should know about ‘module’ & ‘require’ in Node.js </span>
+		   <button class="trash" id="TrashButton5" onclick="display_trash_modal(5)"> 
+		<span class="icon">
+                        <!-- TODO: Include Font Awesome icon for delete icon here -->
+<i class="fa fa-trash-o" aria-hidden="true"></i>
+                    </span> 
+		</button>
+	    </p>
+
+	    <div id="myTrashModal5" class="trash-modal">
+
+  	     <!-- Modal content -->
+		  <div class="trash-modal-content">
+ 	             <span class="close7">&times;</span>
+		     <label class="trash_title">Are you sure you want to delete this post?</label>		     		     
+		     <button class="yes" id="yes5" onclick="remove_post(5)" type="submit">Yes</button>
+		     <button class="no" id="no5" onclick="retain_post(5)" type="submit">No</button>
+		  </div>
+	    </div>
+
+		</div>
+		<div class="post-content">
+                <p class="hide_post_content" id="post-content-5">Node.js treats each JavaScript file as a separate module. For instance, if you have a file containing some code and this file is named xyz.js, then this file is treated as a module in Node, and you can say that you’ve created a module
+                    named xyz.</p>
+                </div>
+			<button id="post5" onclick="show_post_details(5)" class="three_dots">
+				<span>
+				<!-- TODO: Include Font Awesome icon for delete icon here -->
+				<i class="fa fa-ellipsis-h" aria-hidden="true"></i>
+				</span>
+			</button>
+            </div>
+        </div>
+        <!-- post 5 ends here -->
+
+        <!-- TODO: Write code for delete post modal here -->
+
+    </div>
+    <!-- list of all posts ends here -->
+
+<script type="text/javascript" src="../scripts/postslist.js"></script>
+<script type="text/javascript" src="../scripts/post.js"></script>
+</body>
+
+</html>
